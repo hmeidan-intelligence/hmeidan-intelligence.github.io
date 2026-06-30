@@ -103,20 +103,23 @@
     @media(max-width:720px) { .nav-links a:not(.btn) { display: none; } }
 
     /* HERO */
-    .hero { background: var(--obsidian); color: var(--linen); padding: 0; overflow: hidden; height: auto; }
-    .hero-inner { display: grid; grid-template-columns: 1fr 1fr; min-height: auto; height: auto; }
+    .hero { background: var(--obsidian); color: var(--linen); padding: 0; overflow: hidden; }
+    /* تم تأمين الارتفاع لتفادي تمدد الإطارات البيروقراطية لـ Google Sites */
+    .hero-inner { display: grid; grid-template-columns: 1fr 1fr; min-height: 520px; }
     .hero-left {
-      padding: 48px clamp(24px,4vw,64px);
-      display: flex; flex-direction: column; justify-content: center; gap: 32px;
+      padding: clamp(40px,6vw,80px) clamp(24px,4vw,64px);
+      display: flex; flex-direction: column; justify-content: space-between;
       border-right: 1px solid rgba(242,238,233,0.1);
     }
-    .hero-eyebrow { font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.2em; color: rgba(242,238,233,0.5); }
+    .hero-eyebrow { font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.2em; color: rgba(242,238,233,0.5); margin-bottom: 30px; }
     .hero-h1 {
       font-family: 'Cormorant Garamond', serif;
       font-weight: 300;
       font-size: clamp(2.4rem, 5vw, 4.5rem);
       line-height: 1.1;
       letter-spacing: -0.01em;
+      flex: 1; display: flex; flex-direction: column; justify-content: center;
+      margin-bottom: 30px;
     }
     .hero-h1 strong { font-weight: 600; color: var(--linen); }
     .hero-bottom { padding-top: 32px; border-top: 1px solid rgba(242,238,233,0.12); }
@@ -128,18 +131,18 @@
     .hero-cta .btn-ghost:hover { background: rgba(242,238,233,0.08); border-color: rgba(242,238,233,0.5); color: var(--linen); }
 
     .hero-right {
-      padding: 48px clamp(24px,4vw,64px);
-      display: flex; flex-direction: column; justify-content: center; gap: 24px;
+      padding: clamp(40px,6vw,80px) clamp(24px,4vw,64px);
+      display: flex; flex-direction: column; justify-content: center;
       background: rgba(0,0,0,0.25);
     }
-    .refusal-label { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.2em; color: var(--shock); }
+    .refusal-label { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.2em; color: var(--shock); margin-bottom: 24px; }
     .refusal-text {
       font-family: 'Cormorant Garamond', serif;
       font-size: clamp(1.15rem, 1.8vw, 1.6rem);
       font-weight: 300; line-height: 1.55;
       color: rgba(242,238,233,0.9); font-style: italic;
       border-left: 2px solid var(--sovereign);
-      padding-left: 24px;
+      padding-left: 24px; margin-bottom: 32px;
     }
     .refusal-text strong { font-style: normal; font-weight: 500; color: var(--linen); }
     .hero-stations { display: flex; flex-direction: column; gap: 12px; }
@@ -148,7 +151,7 @@
     .station span { font-family: 'DM Mono', monospace; font-size: 0.66rem; letter-spacing: 0.12em; color: rgba(242,238,233,0.55); }
     .station span b { color: rgba(242,238,233,0.85); font-weight: 500; }
     @media(max-width:820px) {
-      .hero-inner { grid-template-columns: 1fr; }
+      .hero-inner { grid-template-columns: 1fr; min-height: auto; }
       .hero-left { border-right: none; border-bottom: 1px solid rgba(242,238,233,0.1); }
       .hero-right { background: rgba(0,0,0,0.35); }
     }
@@ -328,16 +331,16 @@
     </div>
     <div class="origin-grid">
       <div class="origin-pull reveal">
-        "Präsenz ist nicht das, what man projiziert, wenn man Macht hat. Es ist das, what bleibt, wenn man sie nicht hat."
+        "Präsenz ist nicht das, was man projiziert, wenn man Macht hat. Es ist das, was bleibt, wenn man sie nicht hat."
       </div>
       <div class="origin-body">
-        <p class="reveal">Zwölf Jahre lang war mein roter Diplomatenpass meine invisible architecture. In Tokio bewegten sich Bürokratien auf einen Anruf hin. In Havanna wurde mein Schweigen in Verhandlungen als Kalkulation gelesen — nie als Verwirrung. In Damaskus öffneten sich Türen, bevor ein word fiel.</p>
+        <p class="reveal">Zwölf Jahre lang war mein roter Diplomatenpass meine invisible architecture. In Tokio bewegten sich Bürokratien auf einen Anruf hin. In Havanna wurde mein Schweigen in Verhandlungen as Kalkulation gelesen — nie as Verwirrung. In Damaskus öffneten sich Türen, bevor ein word fiel.</p>
         <div class="origin-refusal reveal">
           <p>Im März 2013 verließ ich meinen Posten in der syrischen Botschaft in Havanna — nicht weil die Laufbahn geendet hatte, sondern weil das Weitermachen bedeutet hätte, ein Regime zu vertreten, das sein eigenes Volk tötete.</p>
         </div>
         <p class="reveal">Das Laufband am Frankfurter Flughafen trug keinen Mann, der seinen Job verloren hatte. Es trug einen Mann, der sein Gewissen über seine architecture gestellt hatte.</p>
-        <p class="reveal">Die Warteschlange in der Ausländerbehörde Hannover lehrte mich, what kein diplomatisches Briefing vorbereitet hatte: <strong>Souveränität ist kein Titel, den man bekommt. Sie ist eine Struktur, die man von innen aufbaut.</strong></p>
-        <p class="reveal">Ich ging ins Theater. Nicht als Flucht — als Labor. Fünف Jahre Arbeit auf deutschen Bühnen, in freien Theaterprojekten und in der angewandten Theaterpädagogik. Theater als soziale Praxis: Erforschung von <strong>Verhaltenskodizes</strong>, Schauspiel und interkulturelle Vermittlung, unter anderem am Theater für Niedersachsen (TfN). Mitglied im TPZ (Theaterpädagogisches Zentrum Hildesheim). Was ich dort lernte, lehrten mich fofzehn diplomatische Briefings nie: Präsenz ist nicht das, what man projiziert, wenn man Macht hat. Es ist das, what bleibt, wenn man sie nicht hat.</p>
+        <p class="reveal">Die Warteschlange in der Ausländerbehörde Hannover lehrte mich, was kein diplomatisches Briefing vorbereitet hatte: <strong>Souveränität ist kein Titel, den man bekommt. Sie ist eine Struktur, die man von innen aufbaut.</strong></p>
+        <p class="reveal">Ich ging ins Theater. Nicht als Flucht — als Labor. Fünf Jahre Arbeit auf deutschen Bühnen, in freien Theaterprojekten und in der angewandten Theaterpädagogik. Theater als soziale Praxis: Erforschung von <strong>Verhaltenskodizes</strong>, Schauspiel und interkulturelle Vermittlung, unter anderem am Theater für Niedersachsen (TfN). Mitglied im TPZ (Theaterpädagogisches Zentrum Hildesheim). Was ich dort lernte, lehrten mich fofzehn diplomatische Briefings nie: Präsenz ist nicht das, was man projiziert, wenn man Macht hat. Es ist das, was bleibt, wenn man sie nicht hat.</p>
         <a class="origin-link reveal" href="https://www.diplomatspowerhub.com/p/self-diplomacy-in-the-age-of-algorithms" target="_blank" rel="noopener">The Briefing: The Conveyor Belt →</a>
       </div>
     </div>
@@ -418,7 +421,7 @@
         <h3>Forensische Kommunikationsanalyse</h3>
         <ul>
           <li>Forensische Analyse dysfunktionaler Interaktionsdynamiken in Entscheidungsgremien</li>
-          <li>Analyse verdeckter, unbewusster Verhaltensskripte</li>
+          <li>Analyse verdeckter, unbewusستر Verhaltensskripte</li>
           <li>Neugestaltung institutioneller Interaktionsszenarien</li>
         </ul>
         <div class="service-price">Fokus: <b>Systemische Strukturanalyse</b></div>
@@ -473,7 +476,7 @@
       <div class="bio-text">
         <span class="sec-label">BIOGRAFISCHE VERANKERUNG</span>
         <br>
-        <p class="mono reveal">Diplomat a.D. | Experفه لـ Interaktions-Dramaturgie | Mitglied im TPZ</p>
+        <p class="mono reveal">Diplomat a.D. | Experte für Interaktions-Dramaturgie | Mitglied im TPZ</p>
         <br>
         <p class="reveal">Zwölf Jahre im diplomatischen Dienst auf vier Kontinenten — Japan, Kuba, Naher Osten — gefolgt von einer radikalen Zäsur im März 2013 aus politisch-moralischer Verantwortung: <b style="color:var(--obsidian); font-weight:600;">bewusste Demission aus dem syrischen Auswärtigen Dienst.</b></p>
         <div class="bio-refusal reveal">
@@ -502,7 +505,7 @@
         <a class="btn" href="mailto:h.hmeidan@hmeidan-intelligence.de?subject=Anfrage%20Executive%20Briefing">Executive Briefing buchen</a>
         <a class="btn btn-ghost" href="https://diplomatspowerhub.substack.com" target="_blank" rel="noopener">Briefings abonnieren</a>
       </div>
-      <p class="kontakt-alt reveal">Direكتفرة: <a href="mailto:h.hmeidan@hmeidan-intelligence.de">h.hmeidan@hmeidan-intelligence.de</a></p>
+      <p class="kontakt-alt reveal">Direktverbindung: <a href="mailto:h.hmeidan@hmeidan-intelligence.de">h.hmeidan@hmeidan-intelligence.de</a></p>
       <div class="closing-line reveal">
         <p class="closing-statement">
           <strong>Der Raum hat immer ein Skript.</strong> März 2013 war the moment I stopped performing it.
