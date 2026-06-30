@@ -21,7 +21,12 @@
       --rule-light: rgba(17,17,17,0.06);
     }
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+    html, body { 
+      scroll-behavior: smooth; 
+      max-width: 100%; 
+      overflow-x: hidden;
+      height: auto;
+    }
     body {
       background: var(--linen);
       color: var(--ink);
@@ -132,6 +137,7 @@
       padding: 64px clamp(24px,4vw,64px);
       display: flex; flex-direction: column; justify-content: center;
       background: rgba(0,0,0,0.25);
+      height: auto;
     }
     .refusal-label { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.2em; color: var(--shock); margin-bottom: 24px; }
     .refusal-text {
@@ -190,6 +196,7 @@
     .trinity-card:hover { border-color: rgba(242,238,233,0.3); }
     .trinity-card:hover::after { transform: scaleX(1); }
     .trinity-icon { font-size: 1.6rem; margin-bottom: 20px; display: block; }
+    .trinity-icon { font-size: 1.6rem; margin-bottom: 20px; display: block; }
     .trinity-num { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.2em; color: #c4574a; display: block; margin-bottom: 12px; }
     .trinity-name { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; font-weight: 600; color: var(--linen); margin-bottom: 8px; display: block; }
     .trinity-sub { font-family: 'Cormorant Garamond', serif; font-size: 1rem; font-style: italic; color: rgba(242,238,233,0.5); display: block; margin-bottom: 18px; }
@@ -246,7 +253,7 @@
     @media(max-width:820px) { .bio-grid { grid-template-columns: 1fr; } .bio-portrait { max-width: 280px; } }
 
     /* KONTAKT */
-    #kontakt { background: var(--obsidian); color: var(--linen); padding-bottom: 96px; }
+    #kontakt { background: var(--obsidian); color: var(--linen); padding-bottom: 64px; }
     .kontakt-inner { max-width: 720px; }
     #kontakt .sec-label { color: #c4574a; margin-bottom: 24px; }
     .kontakt-h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 4.5vw, 3.4rem); font-weight: 300; line-height: 1.1; margin-bottom: 24px; }
@@ -265,7 +272,7 @@
     .closing-statement strong { font-style: normal; font-weight: 500; color: rgba(242,238,233,0.9); }
 
     /* FOOTER */
-    footer { background: var(--obsidian); color: rgba(242,238,233,0.5); padding: 48px 0; font-size: 0.8rem; border-top: 1px solid rgba(242,238,233,0.05); }
+    footer { background: var(--obsidian); color: rgba(242,238,233,0.5); padding: 40px 0; font-size: 0.8rem; border-top: 1px solid rgba(242,238,233,0.05); margin: 0; }
     footer .wrap { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px; }
     footer .row { display: flex; width: 100%; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-bottom: 16px; }
     footer a:hover { color: var(--linen); }
@@ -332,13 +339,13 @@
         "Präsenz ist nicht das, was man projiziert, wenn man Macht hat. Es ist das, was bleibt, wenn man sie nicht hat."
       </div>
       <div class="origin-body">
-        <p class="reveal">Zwölf Jahre lang war mein roتر Diplomatenpass meine invisible architecture. In Tokio bewegten sich Bürokratien auf einen Anruf hin. In Havanna wurde mein Schweigen in Verhandlungen als Kalkulation gelesen — nie als Verwirrung. In Damaskus öffneten sich Türen, bevor ein Wort fiel.</p>
+        <p class="reveal">Zwölf Jahre lang war mein roter Diplomatenpass meine invisible architecture. In Tokio bewegten sich Bürokratien auf einen Anruf hin. In Havanna wurde mein Schweigen in Verhandlungen als Kalkulation gelesen — nie als Verwirrung. In Damaskus öffneten sich Türen, bevor ein Wort fiel.</p>
         <div class="origin-refusal reveal">
           <p>Im März 2013 verließ ich meinen Posten in der syrischen Botschaft in Havanna — nicht weil die Laufbahn geendet hatte, sondern weil das Weitermachen bedeutet hätte, ein Regime zu vertreten, das sein eigenes Volk tötete.</p>
         </div>
         <p class="reveal">Das Laufband am Frankfurter Flughafen trug keinen Mann, der seinen Job verloren hatte. Es trug einen Mann, der sein Gewissen über seine Architektur gestellt hatte.</p>
         <p class="reveal">Die Warteschlange in der Ausländerbehörde Hannover lehrte mich, was kein diplomatisches Briefing vorbereitet hatte: <strong>Souveränität ist kein Titel, den man bekommt. Sie ist eine Struktur, die man von innen aufbaut.</strong></p>
-        <p class="reveal">Ich ging ins Theater. Nicht als Flucht — als Labor. Fünf Jahre Arbeit auf deutschen Bühnen, in freien Theaterprojekten und in der angewandten Theaterpädagogik. Theater als soziale Praxis: Erforschung von <strong>Verhaltenskodizes</strong>, Schauspiel und interkulturelle Vermittlung, unter anderem am Theater für Niedersachsen (TfN). Mitglied im TPZ (Theaterpädagogisches Zentrum Hildesheim). Was ich dort lernte, lehrten mich fofzehn diplomatische Briefings nie: Präsenz ist nicht das, was man projiziert, wenn man Macht hat. Es ist das, was bleibt, wenn man sie nicht hat.</p>
+        <p class="reveal">Ich ging ins Theater. Nicht als Flucht — als Labor. Fünf Jahre Arbeit auf deutschen Bühnen, in freien Theaterprojekten und in der angewandten Theaterpädagogik. Theater als soziale Praxis: Erforschung von <strong>Verhaltenskodizes</strong>, Schauspiel und interkulturelle Vermittlung, unter anderem am Theater für Niedersachsen (TfN). Mitglied im TPZ (Theaterpädagogisches Zentrum Hildesheim). Was ich dort lernte, lehrten mich fünfzehn diplomatische Briefings nie: Präsenz ist nicht das, was man projiziert, wenn man Macht hat. Es ist das, was bleibt, wenn man sie nicht hat.</p>
         <a class="origin-link reveal" href="https://www.diplomatspowerhub.com/p/self-diplomacy-in-the-age-of-algorithms" target="_blank" rel="noopener">The Briefing: The Conveyor Belt →</a>
       </div>
     </div>
@@ -351,7 +358,7 @@
       <span class="sec-label mono">02 / Methode</span>
       <h2 class="sec-title">The Trinity</h2>
     </div>
-    <p class="trinity-intro reveal">Kein Framework, das am Schreibtisch entworfen wurde. Extrahiert aus drei Räumen: dem diplomatischen Verhandlungstisch, der Theaterbühne und der Warteschlange der Ausländerbehörde.</p>
+    <p class="trinity-intro reveal">Keين Framework, das am Schreibtisch entworfen wurde. Extrahiert aus drei Räumen: dem diplomatischen Verhandlungstisch, der Theaterbühne und der Warteschlange der Ausländerbehörde.</p>
     <div class="trinity-grid">
       <div class="trinity-card reveal reveal-delay-1">
         <span class="trinity-icon">🏛️</span>
@@ -365,7 +372,7 @@
         <span class="trinity-num">02 / INTERAKTIONSSTEUERUNG</span>
         <span class="trinity-name">Stagecraft</span>
         <span class="trinity-sub">Status-Intelligenz</span>
-        <p>Die Verhaltens-Dramaturgie des Theaters: Status-Codes lesen, Mikroverhalten entschlüsseln und Raumkontrolle etablieren. Präsenz, die physisch verankert ist und Teams unter hoهم Druck stabilisiert.</p>
+        <p>Die Verhaltens-Dramaturgie des Theaters: Status-Codes lesen, Mikroverhalten entschlüsseln und Raumkontrolle etablieren. Präsenz, die physisch verankert ist und Teams unter hohem Druck stabilisiert.</p>
       </div>
       <div class="trinity-card reveal reveal-delay-3">
         <span class="trinity-icon">🕊️</span>
@@ -445,7 +452,7 @@
         <br>
         <p class="reveal">Parallel zu meiner beratenden Tätigkeit für Fachkräfte und Teams fungiere ich als Projektleiter des <strong>Interdisziplinären KI-Democracy-Labs am TPZ Hildesheim</strong>.</p>
         <p class="reveal">Gefördert durch renommierte deutsche Institutionen — darunter die <strong>Erhard Friedrich Stiftung</strong> und der <strong>VNB</strong> — nutzt diese Initiative performative Versuchsanordnungen und fortgeschrittene Prompt-Methoden, um Multiplikatoren, Pädagogen und junge Bürger in digitaler Mündigkeit zu schulen.</p>
-        <p class="reveal">Wir begreifen den Umgang mit KI nicht als rein technisches Problem, sondern als demokratische Kernkompetenz. Unser Ziel ist der Schutz der kognitiven Souveränität gegenüber algorithmischer Manipulation im öffentlichen und institutionellen Raum.</p>
+        <p class="reveal">Wir begপ্রেম den Umgang mit KI nicht als rein technisches Problem, sondern als demokratische Kernkompetenz. Unser Ziel ist der Schutz der kognitiven Souveränität gegenüber algorithmischer Manipulation im öffentlichen und institutionellen Raum.</p>
       </div>
       <div class="labor-panel reveal">
         <span class="panel-label mono">PROJEKTDATEN &amp; FÖRDERUNG</span>
@@ -501,7 +508,7 @@
       <p class="kontakt-lede reveal"><b>30 Minuten. Absolut vertraulich. Ohne Verkaufsskript. Sie skizzieren die operative Reibung in Ihrem System — ich liefere das architektonische Urteil, ob mein Protokoll Ihre Handlungsfreiheit wiederherstellt.</b></p>
       <div class="kontakt-btns reveal">
         <a class="btn" href="mailto:h.hmeidan@hmeidan-intelligence.de?subject=Anfrage%20Executive%20Briefing">Executive Briefing buchen</a>
-        <a class="btn btn-ghost" href="https://diplomatspowerhub.substack.com" target="_blank" rel="noopener">Briefings abonnieren</a>
+        <a class="btn btn-ghost" href="https://diplomatspowerhub.substack.com" target="_blank" rel="noopener">Briefings abonniieren</a>
       </div>
       <p class="kontakt-alt reveal">Direktkontakt: <a href="mailto:h.hmeidan@hmeidan-intelligence.de">h.hmeidan@hmeidan-intelligence.de</a></p>
       <div class="closing-line reveal">
