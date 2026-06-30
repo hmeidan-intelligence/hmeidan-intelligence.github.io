@@ -101,6 +101,7 @@
       border: 1px solid var(--obsidian);
       transition: background 0.2s, color 0.2s, border-color 0.2s;
       cursor: pointer;
+      text-align: center;
     }
     .btn:hover { background: var(--sovereign); border-color: var(--sovereign); }
     .btn-ghost { background: transparent; color: var(--obsidian); border: 1px solid var(--obsidian); }
@@ -251,18 +252,51 @@
     .bio-tag { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.1em; border: 1px solid var(--rule); padding: 8px 14px; color: var(--ink-soft); background: var(--linen-dark); }
     @media(max-width:820px) { .bio-grid { grid-template-columns: 1fr; } .bio-portrait { max-width: 280px; } }
 
-    /* KONTAKT */
+    /* KONTAKT & FORM */
     #kontakt { background: var(--obsidian); color: var(--linen); padding-bottom: 64px; }
     .kontakt-inner { max-width: 720px; }
     #kontakt .sec-label { color: #c4574a; margin-bottom: 24px; }
     .kontakt-h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2rem, 4.5vw, 3.4rem); font-weight: 300; line-height: 1.1; margin-bottom: 24px; }
     .kontakt-h2 em { font-style: italic; color: rgba(242,238,233,0.5); }
     .kontakt-lede { font-size: 1.05rem; color: rgba(242,238,233,0.75); max-width: 52ch; margin-bottom: 36px; line-height: 1.65; }
-    .kontakt-btns { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 24px; }
-    .kontakt-btns .btn { background: var(--shock); border-color: var(--shock); color: var(--linen); }
-    .kontakt-btns .btn:hover { background: var(--linen); border-color: var(--linen); color: var(--obsidian); }
-    .kontakt-btns .btn-ghost { background: transparent; color: rgba(242,238,233,0.8); border-color: rgba(242,238,233,0.25); }
-    .kontakt-btns .btn-ghost:hover { background: rgba(242,238,233,0.08); border-color: rgba(242,238,233,0.5); color: var(--linen); }
+    
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-bottom: 32px;
+      max-width: 500px;
+    }
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .form-group label {
+      font-family: 'DM Mono', monospace;
+      font-size: 0.68rem;
+      letter-spacing: 0.1em;
+      color: rgba(242,238,233,0.6);
+      text-transform: uppercase;
+    }
+    .contact-form input, .contact-form textarea {
+      background: rgba(242,238,233,0.05);
+      border: 1px solid rgba(242,238,233,0.15);
+      color: var(--linen);
+      padding: 14px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.95rem;
+      transition: border-color 0.2s;
+    }
+    .contact-form input:focus, .contact-form textarea:focus {
+      outline: none;
+      border-color: var(--sovereign);
+    }
+    .contact-form button {
+      align-self: flex-start;
+      margin-top: 8px;
+    }
+
     .kontakt-alt { font-family: 'DM Mono', monospace; font-size: 0.72rem; letter-spacing: 0.1em; color: rgba(242,238,233,0.5); }
     .kontakt-alt a { color: rgba(242,238,233,0.8); border-bottom: 1px solid rgba(242,238,233,0.25); padding-bottom: 2px; }
     .kontakt-alt a:hover { border-color: var(--shock); color: var(--linen); }
@@ -294,7 +328,7 @@
     <div class="nav-links">
       <a href="https://diplomatspowerhub.substack.com" target="_blank" rel="noopener">The Briefing</a>
       <a href="https://www.linkedin.com/in/haytham-hmeidan-a0899125/" target="_blank" rel="noopener">Intelligence Network</a>
-      <a class="btn" href="mailto:h.hmeidan@hmeidan-intelligence.de?subject=Anfrage%20Erstgespr%C3%A4ch">Erstgespräch</a>
+      <a class="btn" href="#kontakt">Erstgespräch</a>
     </div>
   </div>
 </nav>
@@ -310,7 +344,7 @@
       <div class="hero-bottom">
         <p class="hero-lede">Status-Intelligenz, Verhandlungspraxis und digitale Souveränität für Professionals, Teams und Institutionen unter Druck.</p>
         <div class="hero-cta">
-          <a class="btn" href="mailto:h.hmeidan@hmeidan-intelligence.de?subject=Anfrage%20Erstgespr%C3%A4ch">Erstgespräch anfragen</a>
+          <a class="btn" href="#kontakt">Erstgespräch anfragen</a>
           <a class="btn btn-ghost" href="https://diplomatspowerhub.substack.com" target="_blank" rel="noopener">Briefings lesen</a>
         </div>
       </div>
@@ -338,13 +372,13 @@
         "Präsenz ist nicht das, was man projiziert, wenn man Macht hat. Es ist das, was remains, wenn man sie nicht hat."
       </div>
       <div class="origin-body">
-        <p class="reveal">Zwölf Jahre lang war mein roter Diplomatenpass meine invisible architecture. In Tokio bewegten sich Bürokratien auf einen Anruf hin. In Havanna wurde mein Schweigen in Verhandlungen als Kalkulation gelesen — nie als Verwirrung. In Damaskus öffneten sich Türen, bevor ein Wort fiel.</p>
+        <p class="reveal">Zwölf Jahre lang war mein roter Diplomatenpass meine invisible architecture. In Tokio bewegten sich Bürokratien auf einen Anruf hin. In Havanna wurde mein Schweigen in Verhandlungen als Kalkulation gelesen — nie als Verwirrung. In Damaskus öffneten sich Türen, bevor ein Word fiel.</p>
         <div class="origin-refusal reveal">
           <p>Im März 2013 verließ ich meinen posten in der syrischen Botschaft in Havanna — nicht weil die Laufbahn geendet hatte, sondern weil das Weitermachen bedeutet hätte, ein Regime zu vertreten, das sein eigenes Volk tötete.</p>
         </div>
-        <p class="reveal">Das Laufband am Frankfurter Flughafen trug keinen Mann, der seinen Job verloren hatte. Er trug einen Mann, der sein Gewissen über seine Architektur gestellt hatte.</p>
-        <p class="reveal">Die Warteschlange in की Ausländerbehörde Hannover lehrte mich, was kein diplomatisches Briefing vorbereitet hatte: <strong>Souveränität ist kein Titel, den man bekommt. Sie ist eine Struktur, die man von innen aufbaut.</strong></p>
-        <p class="reveal">Ich ging ins Theater. Nicht als Flucht — als Labor. Fünf Jahre Arbeit auf deutschen Bühnen, in freien Theaterprojekten und in der angewandten Theaterpädagogik. Theater als soziale Praxis: Erforschung von <strong>Verhaltenskodizes</strong>, Schauspiel und interkulturelle Vermittlung, unter anderem am Theater für Niedersachsen (TfN). Mitglied im TPZ (Theaterpädagogisches Zentrum Hildesheim). Was ich dort lernte, lehrten mich fünfzehn diplomatische Briefings nie: Präsenz ist nicht das, was man projiziert, wenn man Macht hat. Es ist das, was bleibt, wenn man sie nicht hat.</p>
+        <p class="reveal">Das Laufband am Frankfurter Flughafen trug keinen Mann, der seinen Job verloren hatte. Er untrug einen Mann, der sein Gewissen über seine architecture gestellt hatte.</p>
+        <p class="reveal">Die Warteschlange in der Ausländerbehörde Hannover lehrte mich, was kein diplomatisches Briefing vorbereitet hatte: <strong>Souveränität ist kein Titel, den man bekommt. Sie ist eine Struktur, die man von innen aufbaut.</strong></p>
+        <p class="reveal">Ich ging ins Theater. Nicht als Flucht — als Labor. Fünf Jahre Arbeit auf deutschen Bühnen, in freien Theaterprojekten und in der angewandten Theaterpädagogik. Theater als soziale Praxis: Erforschung von <strong>Verhaltenskodizes</strong>, Schauspiel und interkulturelle Vermittlung, unter anderem am Theater für Niedersachsen (TfN). Mitglied im TPZ (Theaterpädagogisches Zentrum Hildesheim). Was ich dort lernte, lehrten mich f&uuml;nfzehn diplomatische Briefings nie: Präsenz ist nicht das, was man projiziert, wenn man Macht hat. Es ist das, was bleibt, wenn man sie nicht hat.</p>
         <a class="origin-link reveal" href="https://www.diplomatspowerhub.com/p/self-diplomacy-in-the-age-of-algorithms" target="_blank" rel="noopener">The Briefing: The Conveyor Belt →</a>
       </div>
     </div>
@@ -364,7 +398,7 @@
         <span class="trinity-num">01 / REIBUNGSMINIMIERUNG</span>
         <span class="trinity-name">Statecraft</span>
         <span class="trinity-sub">Executive Diplomacy</span>
-        <p>Konfliktsensitive Kommunikation, taktische Deeskalation und strategische Navigation in komplexen interkulturellen und institutionellen Strukturen. Subtexte dechiffrieren und diplomatische Kontext-Intelligenz im internationalen Raum etablieren – ohne Positionsverlust.</p>
+        <p>Konfliktsensitive Kommunikation, taktische Deeskalation und strategic Navigation in komplexen interkulturellen und institutionellen Strukturen. Subtexte dechiffrieren und diplomatische Kontext-Intelligenz im internationalen Raum etablieren – ohne Positionsverlust.</p>
       </div>
       <div class="trinity-card reveal reveal-delay-2">
         <span class="trinity-icon">🎭</span>
@@ -449,9 +483,9 @@
         <h2 class="sec-title reveal">Das Interdisziplinäre KI-Democracy-Lab</h2>
         <br>
         <br>
-        <p class="reveal">Parallel zu meiner beratenden Tätigkeit für Fachkräfte und Teams fungiere ich als Projektleiter des <strong>Interdisziplinären KI-Democracy-Labs am TPZ Hildesheim</strong>.</p>
+        <p class="reveal">Parallel zu meiner beratenden Tätigkeit für Fachkräfte and Teams fungiere ich als Projektleiter des <strong>Interdisziplinären KI-Democracy-Labs am TPZ Hildesheim</strong>.</p>
         <p class="reveal">Gefördert durch renommierte deutsche Institutionen — darunter die <strong>Erhard Friedrich Stiftung</strong> und der <strong>VNB</strong> — nutzt diese Initiative performative Versuchsanordnungen und fortgeschrittene Prompt-Methoden, um Multiplikatoren, Pädagogen und junge Bürger in digitaler Mündigkeit zu schulen.</p>
-        <p class="reveal">Wir begreifen den Umgang mit KI nicht als rein technisches Problem, sondern als demokratische Kernkompetenz. Unser Ziel ist der Schutz की kognitiven Souveränität gegenüber algorithmischer Manipulation im öffentlichen und institutionellen Raum.</p>
+        <p class="reveal">Wir begreifen den Umgang mit KI nicht als rein technisches Problem, sondern als demokratische Kernkompetenz. Unser Ziel ist der Schutz der kognitiven Souveränität gegenüber algorithmischer Manipulation im öffentlichen und institutionellen Raum.</p>
       </div>
       <div class="labor-panel reveal">
         <span class="panel-label mono">PROJEKTDATEN &amp; FÖRDERUNG</span>
@@ -486,7 +520,7 @@
         <div class="bio-refusal reveal">
           <p>„Das Laufband war kein Ende. Es war der Beginn der einzigen Architektur, die trägt — weil sie von innen gebaut ist."</p>
         </div>
-        <p class="reveal">Langjährige Erfahrung auf deutschen Bühnen, insbesondere am Theater für Niedersachsen (TfN), in freien Theaterprojekten und की angewandten Theaterpädagogik mit dem Schwerpunkt <b>Kunst als soziale Praxis</b>. Etabliertes Mitglied im TPZ (Theaterpädagogisches Zentrum) durch die praxisnahe Vermittlung von Verhaltens- und Beziehungsdynamiken.</p>
+        <p class="reveal">Langjährige Erfahrung auf deutschen Bühnen, insbesondere am Theater für Niedersachsen (TfN), in freien Theaterprojekten und der angewandten Theaterpädagogik mit dem Schwerpunkt <b>Kunst als soziale Praxis</b>. Etabliertes Mitglied im TPZ (Theaterpädagogisches Zentrum) durch die praxisnahe Vermittlung von Verhaltens- und Beziehungsdynamiken.</p>
         <div class="bio-tags reveal">
           <span class="bio-tag">Statecraft</span>
           <span class="bio-tag">Stagecraft</span>
@@ -505,10 +539,19 @@
       <span class="sec-label mono">06 / Erstkontakt</span>
       <h2 class="kontakt-h2 reveal">Die Verhandlung beginnt, <em>bevor das erste Wort fällt.</em></h2>
       <p class="kontakt-lede reveal"><b>30 Minuten. Absolut vertraulich. Ohne Verkaufsskript. Sie skizzieren die operative Reibung in Ihrem System — ich liefere das architektonische Urteil, ob mein Protokoll Ihre Handlungsfreiheit wiederherstellt.</b></p>
-      <div class="kontakt-btns reveal">
-        <a class="btn" href="mailto:h.hmeidan@hmeidan-intelligence.de?subject=Anfrage%20Executive%20Briefing">Executive Briefing buchen</a>
-        <a class="btn btn-ghost" href="https://diplomatspowerhub.substack.com" target="_blank" rel="noopener">Briefings abonnieren</a>
-      </div>
+      
+      <form class="contact-form reveal" action="https://formspree.io/f/xpqgjgdd" method="POST">
+        <div class="form-group">
+          <label for="email">Ihre E-Mail-Adresse</label>
+          <input type="email" id="email" name="_replyto" placeholder="name@firma.de" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Ihre Nachricht / Anfrage</label>
+          <textarea id="message" name="message" rows="4" placeholder="Sehr geehrter Herr Hmeidan, ich interessiere mich für..." required></textarea>
+        </div>
+        <button type="submit" class="btn">Anfrage Senden</button>
+      </form>
+
       <p class="kontakt-alt reveal">Direktkontakt: <a href="mailto:h.hmeidan@hmeidan-intelligence.de">h.hmeidan@hmeidan-intelligence.de</a></p>
       <div class="closing-line reveal">
         <p class="closing-statement">
