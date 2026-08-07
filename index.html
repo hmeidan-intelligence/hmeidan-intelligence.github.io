@@ -198,12 +198,13 @@
     /* SERVICES */
     #leistungen { background: var(--linen-dark); }
     .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-bottom: 40px; }
-    .service-card { background: var(--linen); border: 1px solid var(--rule); padding: 32px 26px; display: flex; flex-direction: column; transition: border-color 0.2s, transform 0.2s; }
+    .service-card { background: var(--linen); border: 1px solid var(--rule); padding: 32px 26px; display: flex; flex-direction: column; transition: border-color 0.2s, transform 0.2s, box-shadow 0.2s; position: relative; }
     .service-card:hover { border-color: var(--sovereign); transform: translateY(-3px); }
-    .service-card.featured { border-color: var(--sovereign); }
-    .service-meta { display: flex; justify-content: space-between; margin-bottom: 20px; flex-wrap: wrap; gap: 6px; }
+    .service-card.featured { border-color: var(--sovereign); box-shadow: 0 10px 32px rgba(123,18,18,0.12); }
+    .service-card.featured::before { content: ''; position: absolute; top: -1px; left: -1px; right: -1px; height: 3px; background: var(--sovereign); }
+    .service-meta { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 6px; }
     .service-meta span { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.12em; color: var(--ink-soft); }
-    .service-meta .tag-featured { color: var(--shock); font-weight: 500; }
+    .service-meta .tag-featured { color: var(--linen); background: var(--sovereign); font-weight: 500; padding: 4px 9px; }
     .service-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-weight: 500; margin-bottom: 16px; line-height: 1.3; }
     .service-card ul { list-style: none; margin-bottom: 24px; flex: 1; }
     .service-card li { font-size: 0.93rem; color: var(--ink-soft); padding: 7px 0 7px 20px; position: relative; border-bottom: 1px solid var(--rule-light); }
@@ -383,7 +384,7 @@
       <span class="sec-label mono">Leistungen</span>
       <h2 class="sec-title">Sovereign Protocols</h2>
     </div>
-    <div class="services-grid" style="grid-template-columns: repeat(2, minmax(0,1fr)); max-width: 760px; margin-left: auto; margin-right: auto;">
+    <div class="services-grid">
       <div class="service-card reveal reveal-delay-1">
         <div class="service-meta">
           <span>FORMAT 01</span>
@@ -409,6 +410,19 @@
           <li>Neugestaltung von Interaktionsszenarien – zurück zur Handlungssouveränität</li>
         </ul>
         <div class="service-price">Fokus: <b>Systemische Strukturanalyse</b></div>
+      </div>
+      <div class="service-card featured reveal reveal-delay-3">
+        <div class="service-meta">
+          <span>FORMAT 03</span>
+          <span class="tag-featured">KI-SOUVERÄNITÄT</span>
+        </div>
+        <h3>KI-Souveränität: Richtung statt Reaktion</h3>
+        <ul>
+          <li>KI als Werkzeug der Synthese – gerichtet durch menschliches Urteil, nicht ersetzt durch es</li>
+          <li>Kognitive Souveränität gegenüber algorithmischer Steuerung im Berufsalltag</li>
+          <li>Performative Vermittlung von KI-Kompetenz für Teams und Institutionen</li>
+        </ul>
+        <div class="service-price">Fokus: <b>Urteilskraft &amp; kognitive Souveränität</b></div>
       </div>
     </div>
   </div>
