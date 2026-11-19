@@ -306,8 +306,14 @@
     .closing-statement strong { font-style: normal; font-weight: 500; color: rgba(242,238,233,0.92); }
 
 
-    .projects .ref-quote blockquote { margin: 10px 0 8px; padding: 14px 18px; border-left: 3px solid var(--sovereign); background: rgba(123,18,18,0.04); font-family: var(--display); font-style: italic; font-size: 1.08rem; line-height: 1.55; color: var(--ink); }
-    .projects .ref-quote .ref-by { display: block; font-family: var(--mono); font-size: 0.62rem; letter-spacing: 0.1em; color: var(--ink-soft); }
+    .pullquote { margin: 0 0 40px; padding: 48px 0 40px; border-top: 1px solid var(--rule); }
+    .pullquote blockquote { margin: 0; max-width: 900px; font-family: var(--display); font-style: italic; font-weight: 400; font-size: clamp(1.45rem, 2.8vw, 2.2rem); line-height: 1.38; color: var(--obsidian); }
+    .pullquote figcaption { margin-top: 22px; font-size: 0.9rem; color: var(--ink-soft); line-height: 1.6; }
+    .pullquote figcaption strong { color: var(--ink); font-weight: 500; }
+    .standing { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; padding-top: 28px; border-top: 1px solid var(--rule); }
+    .standing h3 { font-family: var(--display); font-size: 1.2rem; font-weight: 600; color: var(--obsidian); margin-bottom: 8px; line-height: 1.3; }
+    .standing p { font-size: 0.92rem; color: var(--ink-soft); line-height: 1.65; }
+    @media(max-width:860px) { .standing { grid-template-columns: 1fr; gap: 28px; } }
     .single-offer { max-width: 780px; margin-bottom: 28px; }
     .other-formats-head { margin-top: 44px; margin-bottom: 16px; font-size: 0.64rem; letter-spacing: 0.14em; color: var(--ink-soft); }
     .secondary-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; max-width: 780px; }
@@ -517,11 +523,6 @@
         <p class="reveal">Zwölf Jahre im syrischen diplomatischen Dienst — mit Stationen in Damaskus, Tokio und Havanna — gefolgt von einer bewussten Zäsur im <strong>März 2013 aus politisch-moralischer Verantwortung:</strong> dem öffentlichen Austritt aus dem Botschaftsdienst in Havanna, um kein Regime zu vertreten, das Gewalt gegen das eigene Volk einsetzt.</p>
         <div class="bio-refusal reveal"><p style="font-family:var(--display); font-style:italic; font-size:1.18rem; line-height:1.55; color:var(--ink); margin:0; max-width:none;">„Das Laufband war kein Ende. Es war der Beginn der einzigen Architektur, die trägt — weil sie von innen gebaut ist.“</p></div>
         <p class="reveal">Ausbildung in Schauspiel und Theaterpädagogik an der Hochschule für Musik, Theater und Medien Hannover (HMTM) sowie der Hessischen Theaterakademie; fünf Jahre Arbeit auf deutschen Bühnen und in der angewandten Theaterpädagogik. Heute Mitglied im Theaterpädagogischen Zentrum Hildesheim (TPZ) und Projektleiter des Interdisziplinären KI-Demokratie-Labors.</p>
-        <ul class="projects reveal">
-          <li><strong>Interdisziplinäres KI-Demokratie-Labor, TPZ Hildesheim</strong>Projektleitung. Performative KI-Workshops, gefördert von der Erhard Friedrich Stiftung und dem VNB.</li>
-          <li><strong>PLATTFORM-Festival, Ernst Deutsch Theater Hamburg (Februar 2025)</strong>Leitung des Runden Tisches „(theatrale) Diplomatie und interkulturelle Kompetenz“.</li>
-        <li class="ref-quote"><strong>Referenz · Katrin Langensiepen, MdEP</strong><blockquote>„Mr. Hmeidan consistently demonstrates strong communication skills, even when navigating high-stakes political environments. He is adept at assessing and managing security risks as well as building up and navigating complex relationships, a crucial asset in any crisis.“</blockquote><span class="ref-by">Katrin Langensiepen, Mitglied des Europäischen Parlaments · Referenzschreiben vom 14. Mai 2025 · Originalzitat</span></li>
-        </ul>
         <div class="bio-tags reveal">
           <span class="bio-tag">M.A. in Diplomacy (Malta)</span>
           <span class="bio-tag">HMTM Hannover</span>
@@ -529,6 +530,14 @@
           <span class="bio-tag">DE · EN · AR</span>
         </div>
       </div>
+    </div>
+    <figure class="pullquote reveal">
+      <blockquote>„Mr. Hmeidan consistently demonstrates strong communication skills, even when navigating high-stakes political environments. He is adept at assessing and managing security risks as well as building up and navigating complex relationships, a crucial asset in any crisis.“</blockquote>
+      <figcaption><strong>Katrin Langensiepen, Mitglied des Europäischen Parlaments</strong><br>Referenzschreiben vom 14. Mai 2025 · Originalzitat (englisch)</figcaption>
+    </figure>
+    <div class="standing reveal">
+      <div><h3>Interdisziplinäres KI-Demokratie-Labor, TPZ Hildesheim</h3><p>Projektleitung. Performative KI-Workshops, gefördert von der Erhard Friedrich Stiftung und dem VNB.</p></div>
+      <div><h3>PLATTFORM-Festival, Ernst Deutsch Theater Hamburg (Februar 2025)</h3><p>Leitung des Runden Tisches „(theatrale) Diplomatie und interkulturelle Kompetenz“.</p></div>
     </div>
   </div>
 </section>
