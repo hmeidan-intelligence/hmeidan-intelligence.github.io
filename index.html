@@ -307,6 +307,15 @@
 
 
     .single-offer { max-width: 780px; margin-bottom: 28px; }
+    .other-formats-head { margin-top: 44px; margin-bottom: 16px; font-size: 0.64rem; letter-spacing: 0.14em; color: var(--ink-soft); }
+    .secondary-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; max-width: 780px; }
+    .service-card.secondary { padding: 24px 24px 22px; box-shadow: none; }
+    .service-card.secondary h3 { font-size: 1.12rem; }
+    .service-card.secondary .service-outcome { font-size: 0.88rem; margin-bottom: 12px; }
+    .service-card.secondary li { font-size: 0.83rem; padding: 5px 0 5px 16px; }
+    @media(max-width:720px) { .secondary-grid { grid-template-columns: 1fr; } }
+    .copy-mail { font: inherit; font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.1em; background: none; border: 0; border-bottom: 1px solid rgba(242,238,233,0.25); color: rgba(242,238,233,0.85); cursor: pointer; padding: 0 0 2px; margin-left: 10px; }
+    .copy-mail:hover { color: var(--linen); border-color: var(--shock); }
     .other-formats { margin-top: 28px; font-size: 0.92rem; color: var(--ink-soft); max-width: 70ch; line-height: 1.65; }
     .other-formats b { color: var(--obsidian); font-weight: 500; }
     .other-formats a { color: var(--obsidian); border-bottom: 1px solid var(--sovereign); }
@@ -456,10 +465,34 @@
     </div>
 
     <div class="pilot-strip reveal">
-      <b>Pilot:</b> Für die ersten drei Unternehmen vergebe ich den Workshop zum Pilotpreis von <b>1.500 € netto</b> statt 2.400 € — im Austausch gegen schriftliches Feedback, eine Vorher-nachher-Auswertung und die Erlaubnis, das Ergebnis zu zitieren.
+      <b>Pilotkonditionen:</b> <b>1.500 € netto</b> statt 2.400 € pro Tag für die ersten drei beauftragten Workshops, die bis zum 30. Juni 2027 stattfinden. Im Gegenzug bitte ich um schriftliches Feedback, eine Vorher-nachher-Auswertung und die Erlaubnis, das Ergebnis zu zitieren.
     </div>
 
-    <p class="other-formats reveal"><b>Weitere Formate, jeweils nach Vorgespräch:</b> <a href="mailto:h.hmeidan@hmeidan-intelligence.de?subject=Anfrage%201%3A1%20Sparring">1:1-Sparring</a> für Führungskräfte: Vorbereitung auf schwierige Auftritte, Präsentationen und Verhandlungen · <a href="mailto:h.hmeidan@hmeidan-intelligence.de?subject=Anfrage%20KI-Souver%C3%A4nit%C3%A4t">KI-Souveränität</a> für Teams und Bildungsträger, die KI steuern wollen, ohne ihre Urteilskraft abzugeben.</p>
+    <p class="other-formats-head reveal mono">WEITERE FORMATE · NACH VORGESPRÄCH</p>
+    <div class="secondary-grid reveal">
+      <article class="service-card secondary">
+        <div class="service-meta"><span>1:1 · FÜHRUNGSKRÄFTE</span></div>
+        <h3>Präsenz und Rollen unter Druck</h3>
+        <p class="service-outcome">Sie gehen mit einem klaren Plan in einen schwierigen Auftritt, eine Präsentation oder eine Verhandlung.</p>
+        <ul>
+          <li>Vorbereitung auf schwierige Auftritte, Präsentationen und Verhandlungen</li>
+          <li>Automatisierte Anpassungsmuster erkennen und das eigene Rollen-Repertoire erweitern</li>
+          <li>Arbeit mit Körper, Atem und Szene, nicht mit Folien</li>
+        </ul>
+        <a class="service-action" href="mailto:h.hmeidan@hmeidan-intelligence.de?subject=Anfrage%201%3A1%20Sparring">Gespräch anfragen →</a>
+      </article>
+      <article class="service-card secondary">
+        <div class="service-meta"><span>KI-SOUVERÄNITÄT · TEAMS &amp; BILDUNGSTRÄGER</span></div>
+        <h3>Richtung statt Reaktion</h3>
+        <p class="service-outcome">Ihr Team nutzt KI als Werkzeug und behält die Entscheidung selbst.</p>
+        <ul>
+          <li>KI als Werkzeug der Synthese, gelenkt vom menschlichen Urteil</li>
+          <li>Performative Workshops zur Urteilskraft gegenüber algorithmischer Steuerung</li>
+          <li>Hervorgegangen aus der Arbeit im KI-Demokratie-Labor, TPZ Hildesheim</li>
+        </ul>
+        <a class="service-action" href="mailto:h.hmeidan@hmeidan-intelligence.de?subject=Anfrage%20KI-Souver%C3%A4nit%C3%A4t">Gespräch anfragen →</a>
+      </article>
+    </div>
   </div>
 </section>
 
@@ -504,7 +537,7 @@
         <a class="btn" href="mailto:h.hmeidan@hmeidan-intelligence.de?subject=Anfrage%20Erstgespr%C3%A4ch%20HSI&amp;body=Guten%20Tag%20Herr%20Hmeidan%2C%0A%0Akurz%20zu%20unserem%20Anliegen%20(Team-Workshop%20/%201%3A1%20Sparring%20/%20KI-Souver%C3%A4nit%C3%A4t)%3A%0A%0AMit%20freundlichen%20Gr%C3%BC%C3%9Fen">Erstgespräch anfragen</a>
         <a class="btn btn-ghost" href="https://diplomatspowerhub.substack.com" target="_blank" rel="noopener">Briefings abonnieren</a>
       </div>
-      <p class="kontakt-alt reveal">Direktverbindung: <a href="mailto:h.hmeidan@hmeidan-intelligence.de">h.hmeidan@hmeidan-intelligence.de</a></p>
+      <p class="kontakt-alt reveal">Öffnet sich kein E-Mail-Programm? Schreiben Sie direkt an <a href="mailto:h.hmeidan@hmeidan-intelligence.de">h.hmeidan@hmeidan-intelligence.de</a><button type="button" class="copy-mail" id="copyMail">Adresse kopieren</button></p>
       <div class="closing-line reveal">
         <p class="closing-statement">
           <strong>Der Raum hat immer ein Skript.</strong> März 2013 war der Moment, in dem ich aufhörte, es zu performen.
@@ -545,6 +578,14 @@
     }, { threshold: 0.08 });
     document.querySelectorAll('.reveal').forEach(el => io.observe(el));
   });
+</script>
+<script>
+document.getElementById('copyMail').addEventListener('click', function(){
+  var b=this, a='h.hmeidan@hmeidan-intelligence.de';
+  function ok(){ b.textContent='Kopiert'; setTimeout(function(){ b.textContent='Adresse kopieren'; },2000); }
+  if(navigator.clipboard&&navigator.clipboard.writeText){ navigator.clipboard.writeText(a).then(ok,function(){ window.prompt('E-Mail-Adresse:',a); }); }
+  else { window.prompt('E-Mail-Adresse:',a); }
+});
 </script>
 </body>
 </html>
