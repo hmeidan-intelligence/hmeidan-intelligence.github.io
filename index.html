@@ -34,6 +34,7 @@
       --obsidian: #111111;
       --sovereign: #7B1212;
       --shock: #FF2200;
+      --shock-btn: #C41C00;
       --linen: #F2EEE9;
       --linen-dark: #E8E2DA;
       --ink: #2C2825;
@@ -66,6 +67,18 @@
       letter-spacing: 0.18em;
       text-transform: uppercase;
       font-weight: 400;
+    }
+
+
+    /* ACCESSIBILITY */
+    .skip-link { position: absolute; left: 12px; top: -60px; z-index: 1000; background: var(--obsidian); color: var(--linen) !important; padding: 10px 16px; font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.1em; border: 1px solid var(--linen); }
+    .skip-link:focus { top: 12px; }
+    a:focus-visible, button:focus-visible, .btn:focus-visible { outline: 2px solid var(--sovereign); outline-offset: 3px; }
+    .hero a:focus-visible, .hero button:focus-visible, #trinity a:focus-visible, #kontakt a:focus-visible, #kontakt button:focus-visible, footer a:focus-visible, footer button:focus-visible { outline-color: var(--linen); }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto !important; }
+      .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+      *, *::before, *::after { animation: none !important; transition-duration: 0.01ms !important; }
     }
 
     /* REVEAL ANIMATIONS */
@@ -149,7 +162,7 @@
     .hero-lede { font-size: 1rem; color: rgba(242,238,233,0.78); max-width: 46ch; margin-bottom: 28px; font-weight: 300; line-height: 1.65; }
     .hero-cta { display: flex; gap: 12px; flex-wrap: wrap; }
     .hero-cta .btn { background: var(--linen); color: var(--obsidian) !important; border-color: var(--linen); }
-    .hero-cta .btn:hover { background: var(--shock); border-color: var(--shock); color: var(--linen) !important; }
+    .hero-cta .btn:hover { background: var(--shock-btn); border-color: var(--shock-btn); color: var(--linen) !important; }
     .hero-cta .btn-ghost { background: transparent; color: rgba(242,238,233,0.82) !important; border-color: rgba(242,238,233,0.28); }
     .hero-cta .btn-ghost:hover { background: rgba(242,238,233,0.08); border-color: rgba(242,238,233,0.55); color: var(--linen) !important; }
 
@@ -205,7 +218,7 @@
 
     /* TRINITY */
     #trinity { background: var(--obsidian); color: var(--linen); }
-    #trinity .sec-label { color: #c4574a; }
+    #trinity .sec-label { color: #d96f62; }
     #trinity .sec-title { color: var(--linen); }
     #trinity .sec-head { border-color: rgba(242,238,233,0.12); }
     .trinity-intro { max-width: 62ch; color: rgba(242,238,233,0.75); margin-bottom: 52px; font-size: 1.04rem; }
@@ -213,7 +226,7 @@
     .trinity-card { background: var(--obsidian); padding: 38px 30px; position: relative; }
     .trinity-card::after { content: ''; position: absolute; bottom: 0; left: 30px; right: 30px; height: 2px; background: var(--sovereign); transform: scaleX(0); transition: transform 0.35s; transform-origin: left; }
     .trinity-card:hover::after { transform: scaleX(1); }
-    .trinity-num { font-family: var(--mono); font-size: 0.62rem; letter-spacing: 0.2em; color: #c4574a; display: block; margin-bottom: 12px; }
+    .trinity-num { font-family: var(--mono); font-size: 0.62rem; letter-spacing: 0.2em; color: #d96f62; display: block; margin-bottom: 12px; }
     .trinity-name { font-family: var(--display); font-size: 1.6rem; font-weight: 600; color: var(--linen); margin-bottom: 8px; display: block; }
     .trinity-sub { font-family: var(--display); font-size: 1rem; font-style: italic; color: rgba(242,238,233,0.52); display: block; margin-bottom: 18px; }
     .trinity-card p { font-size: 0.94rem; color: rgba(242,238,233,0.72); line-height: 1.65; }
@@ -285,12 +298,12 @@
     /* KONTAKT */
     #kontakt { background: var(--obsidian); color: var(--linen); padding-bottom: 88px; }
     .kontakt-inner { max-width: 720px; }
-    #kontakt .sec-label { color: #c4574a; margin-bottom: 20px; }
+    #kontakt .sec-label { color: #d96f62; margin-bottom: 20px; }
     .kontakt-h2 { font-family: var(--display); font-size: clamp(2rem, 4.4vw, 3.3rem); font-weight: 400; line-height: 1.12; margin-bottom: 22px; }
     .kontakt-h2 em { font-style: italic; color: rgba(242,238,233,0.55); }
     .kontakt-lede { font-size: 1.04rem; color: rgba(242,238,233,0.78); max-width: 54ch; margin-bottom: 34px; line-height: 1.65; }
     .kontakt-btns { display: flex; gap: 14px; flex-wrap: wrap; margin-bottom: 22px; }
-    .kontakt-btns .btn { background: var(--shock); border-color: var(--shock); color: var(--linen) !important; }
+    .kontakt-btns .btn { background: var(--shock-btn); border-color: var(--shock-btn); color: var(--linen) !important; }
     .kontakt-btns .btn:hover { background: var(--linen); border-color: var(--linen); color: var(--obsidian) !important; }
     .kontakt-btns .btn-ghost { background: transparent; color: rgba(242,238,233,0.82) !important; border-color: rgba(242,238,233,0.28); }
     .kontakt-btns .btn-ghost:hover { background: rgba(242,238,233,0.08); border-color: rgba(242,238,233,0.55); color: var(--linen) !important; }
@@ -332,6 +345,7 @@
   </style>
 </head>
 <body>
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
 
 <div class="class-bar">
   <div class="wrap">
@@ -341,7 +355,7 @@
   </div>
 </div>
 
-<nav>
+<nav aria-label="Hauptnavigation">
   <div class="wrap">
     <a href="#top" class="nav-logo">HMEIDAN <b style="color:var(--sovereign); font-weight:600;">HSI</b></a>
     <div class="nav-links">
@@ -354,6 +368,7 @@
   </div>
 </nav>
 
+<main id="main">
 <header class="hero" id="top">
   <div class="hero-inner">
     <div class="hero-left">
@@ -548,6 +563,7 @@
   </div>
 </section>
 
+</main>
 <footer>
   <div class="wrap">
     <div class="row">
